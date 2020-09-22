@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{E9E02B90-7C71-B1A7-CB0E-C208687CBB5A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MonsterAttackPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KnockBack.cs">
     <Files>
       <File FileName="Assets/Scripts/FireBullet.cs" Line="8" Column="35" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="49" Column="18" />
-      <File FileName="Assets/Scripts/BulletPoll.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MonsterAttackPlayer.cs" Line="15" Column="10" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
+      <File FileName="Assets/Scripts/BulletPoll.cs" />
+      <File FileName="Assets/Scripts/CameraMovement.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/KnockBack.cs" Line="8" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +15,7 @@
           <Node name="NoMansGroup" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MonsterAttackPlayer.cs" selected="True" />
+                <Node name="KnockBack.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -2,8 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// state
+
+public enum EnemyState {
+    idle,
+    walk,
+    attack,
+    stagger
+}
+
+
 public class Enermy : MonoBehaviour
-{   
+{
+    public EnemyState currentState;
     public int health;
     public int baseAttack;
     public string enemyName;

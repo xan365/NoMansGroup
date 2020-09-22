@@ -68,8 +68,8 @@
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
-    <Compile Include="Assets\Scripts\MonsterAttackPlayer.cs" />
-    <Compile Include="Assets\Scripts\MonsterMovement.cs" />
+    <Compile Include="Assets\Scripts\KnockBack.cs" />
+    <Compile Include="Assets\Scripts\log.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\RoomMove.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />

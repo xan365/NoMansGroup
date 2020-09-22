@@ -3,8 +3,19 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+// state machine
+public enum PlayerState {
+    walk,
+    attack,
+    interact,
+    stagger,
+    idle
+}
+
+
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerState currState;
     public float speed;
     private bool moving;
     private Rigidbody2D myRigidbody;
@@ -16,8 +27,10 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         speed = 10f;
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1);
     }
-
+   
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +38,10 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        //change.z = Input.GetAxisRaw("Vertical");
+
+
+        // add attack code here:
+
         IdleAndMoveAnim();
     }
 
@@ -49,5 +65,22 @@ public class PlayerMovement : MonoBehaviour
                 transform.position + change * speed * Time.deltaTime
             );  
     
+    }
+
+    public void Knock(float knockTime) {
+        StartCoroutine(KnockCo(knockTime));
+    }
+
+    // knock Co.
+    private IEnumerator KnockCo(float knockTime)
+    {
+        if (myRigidbody != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidbody.velocity = Vector2.zero;
+            currState = PlayerState.idle;
+            myRigidbody.velocity = Vector2.zero;
+
+        }
     }
 }
