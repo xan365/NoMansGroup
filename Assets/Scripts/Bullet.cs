@@ -43,4 +43,15 @@ public class Bullet : MonoBehaviour
     {
         CancelInvoke();
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("ground")) {
+            Destroy();
+        }
+        else if (other.gameObject.CompareTag("Player")) {
+            Debug.Log("hit");
+            Destroy();
+        }
+    }
 }
