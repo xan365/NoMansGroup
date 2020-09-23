@@ -43,8 +43,23 @@ public class PlayerMovement : MonoBehaviour
 
 
         // add attack code here:
+        if(Input.GetButtonDown("attack") && currState != PlayerState.attack){
+            StartCoroutine(AttackCo());
+        }
+        UpdateAnimationAndMove();
+
 
         IdleAndMoveAnim();
+    }
+
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("attacking", true);
+        currState = PlayerState.attack;
+        yield return null;
+        animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.3f);
+        currState = PlayerState.walk;
     }
 
     void IdleAndMoveAnim() {
@@ -61,6 +76,21 @@ public class PlayerMovement : MonoBehaviour
         }
         //Debug.Log(change);
     }
+
+    void UpdateAnimationAndMove()
+    {
+        if(change != Vector3.zero)
+        {
+            MoveCharacter();
+            animator.SetFloat("moveX",change.x);
+            animator.SetFloat("moveY",change.y);
+            animator.SetBool("moving",true);
+        }
+        else{
+            animator.SetBool("moving",false);
+        }
+    }
+
     void MoveCharacter() 
     {
             myRigidbody.MovePosition(

@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d1c0ca4a330c82d478c3fb79b275dbdb, type: 3}
-    totalSpriteSurfaceArea: 783800
+    totalSpriteSurfaceArea: 800184
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -309,6 +309,22 @@ SpriteAtlas:
   - {fileID: 21300076, guid: 0e4abc40a2255d647815fad01b017716, type: 3}
   - {fileID: 21300084, guid: 0e4abc40a2255d647815fad01b017716, type: 3}
   - {fileID: 21300086, guid: 0e4abc40a2255d647815fad01b017716, type: 3}
+  - {fileID: 21300030, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300028, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300026, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300024, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300022, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300020, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300016, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300018, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300008, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300010, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300012, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300014, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300000, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300002, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300004, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
+  - {fileID: 21300006, guid: f2c2a4210c76f42ab920eac77df187a6, type: 3}
   - {fileID: 21301654, guid: f24cc4348a7d1704d8c0eb753aa2b459, type: 3}
   - {fileID: 21301674, guid: f24cc4348a7d1704d8c0eb753aa2b459, type: 3}
   - {fileID: 21301694, guid: f24cc4348a7d1704d8c0eb753aa2b459, type: 3}
@@ -1951,6 +1967,22 @@ SpriteAtlas:
   - Inner_38
   - Inner_42
   - Inner_43
+  - modified gfx melee sprites_15
+  - modified gfx melee sprites_14
+  - modified gfx melee sprites_13
+  - modified gfx melee sprites_12
+  - modified gfx melee sprites_11
+  - modified gfx melee sprites_10
+  - modified gfx melee sprites_8
+  - modified gfx melee sprites_9
+  - modified gfx melee sprites_4
+  - modified gfx melee sprites_5
+  - modified gfx melee sprites_6
+  - modified gfx melee sprites_7
+  - modified gfx melee sprites_0
+  - modified gfx melee sprites_1
+  - modified gfx melee sprites_2
+  - modified gfx melee sprites_3
   - Overworld_827
   - Overworld_837
   - Overworld_847
