@@ -15,14 +15,15 @@ public enum EnemyState {
 public class Enermy : MonoBehaviour
 {
     public EnemyState currentState;
-    public int health;
+    public FloatValue maxHealth;
+    public float health;
     public int baseAttack;
     public string enemyName;
     public float moveSpeed;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        health = maxHealth.initialValue;
     }
 
     // Update is called once per frame

@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
             Destroy();
         }
         else if (other.gameObject.CompareTag("Player")) {
-            Debug.Log("hit");
+            //Debug.Log("hit");
             Destroy();
         }
     }

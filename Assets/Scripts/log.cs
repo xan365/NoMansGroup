@@ -24,7 +24,7 @@ public class log : Enermy
         playerBody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         moveSpeed = 5f;
         triggerDistance = 4;
-        attackDistance = 0.2f;
+        attackDistance = 1.0f;
     }
 
     // Update is called once per frame
@@ -55,31 +55,36 @@ public class log : Enermy
         {
             animatorMove.x = 0;
         }
+
         if (Math.Pow(xdiff, 2) + Math.Pow(ydiff, 2) < Math.Pow(triggerDistance, 2)
             && Math.Pow(xdiff, 2) + Math.Pow(ydiff, 2) > Math.Pow(attackDistance, 2))
         {
             animator.SetBool("wake", true);
             animator.SetBool("chase", true);
-            monsterMove();
+            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            myrigidBody.MovePosition(temp);
+            ChangeState(EnemyState.walk);
             animator.SetFloat("moveX", animatorMove.x);
             animator.SetFloat("moveY", animatorMove.y);
         }
         else if (Math.Pow(xdiff, 2) + Math.Pow(ydiff, 2) <= Math.Pow(attackDistance, 2)) {
             animator.SetBool("wake", true);
             animator.SetBool("chase", false);
-            
-
+            ChangeState(EnemyState.attack);
 
         }
         else
         {
             animator.SetBool("chase", false);
             animator.SetBool("wake", false);
+            ChangeState(EnemyState.idle);
         }
     }
 
-    void monsterMove() {
-        Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        myrigidBody.MovePosition(temp);
+    private void ChangeState(EnemyState newState) {
+        if (currentState != newState) {
+            currentState = newState;
+        }
     }
+
 }

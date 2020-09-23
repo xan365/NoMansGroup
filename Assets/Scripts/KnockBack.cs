@@ -10,6 +10,7 @@ public class KnockBack : MonoBehaviour
 
     public float thrust;
     public float knockTime;
+    public float damage;
 
     // Start is called before the first frame update
 
@@ -35,8 +36,12 @@ public class KnockBack : MonoBehaviour
                 if (other.gameObject.CompareTag("Player"))
                 {
                     if (other.gameObject.CompareTag("Player")) {
-                        hit.GetComponent<PlayerMovement>().currState = PlayerState.stagger;
-                        other.GetComponent<PlayerMovement>().Knock(knockTime);
+                        if (other.GetComponent<PlayerMovement>().currState != PlayerState.stagger) {
+                            Debug.Log("log attack people"); 
+                            hit.GetComponent<PlayerMovement>().currState = PlayerState.stagger;
+                            other.GetComponent<PlayerMovement>().Knock(knockTime, damage);
+                        }
+                        
                     }
                 }
             }
