@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy
   - ground
+  - breakable
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3741724317
+    locked: 0
+  - name: breakable
+    uniqueID: 1425932991
     locked: 0

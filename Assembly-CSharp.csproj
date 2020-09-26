@@ -68,7 +68,9 @@
     <Compile Include="Assets\Scripts\HeartManager.cs" />
     <Compile Include="Assets\Scripts\KnockBack.cs" />
     <Compile Include="Assets\Scripts\log.cs" />
+    <Compile Include="Assets\Scripts\PlayerHit.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\pot.cs" />
     <Compile Include="Assets\Scripts\RoomMove.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Scriptable\Signal.cs" />
