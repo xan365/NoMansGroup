@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{E9E02B90-7C71-B1A7-CB0E-C208687CBB5A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HeartManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
     <Files>
       <File FileName="Assets/Scripts/FireBullet.cs" Line="8" Column="35" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="28" Column="36" />
-      <File FileName="Assets/Scripts/BulletPoll.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraMovement.cs" Line="24" Column="59" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="19" Column="11" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="75" Column="40" />
-      <File FileName="Assets/Scripts/KnockBack.cs" Line="40" Column="1" />
-      <File FileName="Assets/Scripts/log.cs" Line="66" Column="42" />
-      <File FileName="Assets/Scripts/RoomMove.cs" Line="8" Column="32" />
-      <File FileName="Assets/Scripts/Scriptable/Signal.cs" Line="24" Column="25" />
-      <File FileName="Assets/Scripts/SignalListener.cs" Line="21" Column="6" />
-      <File FileName="Assets/Scripts/ScriptableObjects/FloatValue.cs" Line="9" Column="31" />
-      <File FileName="Assets/Scripts/HeartManager.cs" Line="4" Column="7" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
+      <File FileName="Assets/Scripts/BulletPoll.cs" />
+      <File FileName="Assets/Scripts/CameraMovement.cs" />
+      <File FileName="Assets/Scripts/KnockBack.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="82" Column="15" />
+      <File FileName="Assets/Scripts/log.cs" />
+      <File FileName="Assets/Scripts/RoomMove.cs" />
+      <File FileName="Assets/Scripts/Scriptable/Signal.cs" />
+      <File FileName="Assets/Scripts/SignalListener.cs" />
+      <File FileName="Assets/Scripts/ScriptableObjects/FloatValue.cs" />
+      <File FileName="Assets/Scripts/HeartManager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,22 +23,17 @@
               <Node name="Scripts" expanded="True">
                 <Node name="Scriptable" expanded="True" />
                 <Node name="ScriptableObjects" expanded="True" />
-                <Node name="HeartManager.cs" selected="True" />
+                <Node name="PlayerMovement.cs" selected="True" />
               </Node>
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="NoMansGroup" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e40ef54b-aee7-4f1d-a07e-879510192bb6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ca02e10e-a6ec-49e9-8775-36ebf74fe2f2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
