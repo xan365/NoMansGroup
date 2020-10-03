@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // state machine
 public enum PlayerState {
@@ -16,6 +17,7 @@ public enum PlayerState {
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currState;
+    public GameObject gameManager;
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
@@ -81,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else {
             this.gameObject.SetActive(false);
+            currentHealth.RuntimeValue = currentHealth.initialValue;
+            gameManager.GetComponent<GameManager>().GameOver();
             Debug.Log("die");
         }
         

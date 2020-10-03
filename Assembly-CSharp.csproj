@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HeartManager.cs" />
     <Compile Include="Assets\Scripts\KnockBack.cs" />
     <Compile Include="Assets\Scripts\log.cs" />
